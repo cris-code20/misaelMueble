@@ -1,0 +1,145 @@
+
+/* variable de entorno */
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,800&display=swap');
+
+:root{
+    --colorPrimario: #be401a;
+    --colorSecundario: #FCC817;
+    --fuente: sans-serif;
+    --fuenteSecundario: 'Open Sans', sans-serif;
+}
+
+
+/* header */
+body{
+    font-family: var(--fuenteSecundario);
+}
+.conatiner{
+    padding: 20px;
+    margin-top: 50px;
+    
+}
+.logo{
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   color: white;
+    font-size: 20px;
+    text-decoration: none;  
+    font-weight: 800;
+}
+
+.fondo{
+    width: 100%;
+}
+
+
+/* seccion main del home  */
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 20px;
+   gap: 30px;
+    
+}
+.boxes{
+    margin-top: 50px;
+    text-align: center;
+    border: 1px solid var(--colorPrimario);
+    background-color: var(--colorSecundario);
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.enlaces{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+.boxes:hover, .enlaces:hover{
+    color: var(--colorSecundario);
+    background-color: var(--colorPrimario);
+    
+}
+
+@media screen and (max-width:800px){
+   .main{
+    display: block;
+    
+   }
+}
+
+/* futter */
+
+.pie-pagina{
+    margin-top: 100px;
+    width: 100%;
+    background-color: var(--colorPrimario);
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: block;
+   margin: 0 auto;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+    
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: var(--colorPrimario);
+}
+.pie-pagina .grupo-2{
+    background-color: var(--colorSecundario);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+
